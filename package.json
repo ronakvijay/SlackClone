@@ -1,0 +1,23 @@
+{
+  "name": "slackclone",
+  "version": "1.0.0",
+  "description": "Slack Clone using React and GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronakvijay/SlackClone.git"
+  },
+  "keywords": [
+    "React",
+    "GraphQL"
+  ],
+  "author": "Ronak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronakvijay/SlackClone/issues"
+  },
+  "homepage": "https://github.com/ronakvijay/SlackClone#readme"
+}
