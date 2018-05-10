@@ -8,16 +8,18 @@ import resolvers from './resolvers';
 import models from './models';
 
 const schema = makeExecutableSchema({
-    typeDefs,
-    resolvers,
+  typeDefs,
+  resolvers,
 });
 
 const app = express();
+
 const graphqlEndpoint = '/graphql';
 
 app.use(graphqlEndpoint, bodyParser.json(), graphqlExpress({ schema }));
+
 app.use('/graphiql', graphiqlExpress({ endpointURL: graphqlEndpoint }));
 
-models.sequelize.sync().then(() => {
-    app.listen(8080);
+models.sequelize.sync({ force: true }).then(() => {
+  app.listen(8081);
 });
